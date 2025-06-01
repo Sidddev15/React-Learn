@@ -1,12 +1,41 @@
-# React + Vite
+## 💡 What I Learned
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Through building this **Mini Blog Viewer** as part of my React Mastery Challenge (Day 1), I deep-dived into the core fundamentals of React. Here's a breakdown of what I practiced and understood thoroughly:
 
-Currently, two official plugins are available:
+### ✅ React Fundamentals
+- JSX syntax and structure
+- Functional Components
+- Props and state management using `useState`
+- Side-effects with `useEffect`
+- Conditional rendering using ternary operators and logical checks
+- Rendering lists with `.map()` and using `key` props
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📦 Project Structure & Modular Code
+- Organized components into reusable files (`BlogList`, `BlogCard`, `FullBlogModal`)
+- Separated API logic into a dedicated `services` folder
+- Applied clean folder structuring and naming conventions
 
-## Expanding the ESLint configuration
+### 🔗 API Integration
+- Integrated JSONPlaceholder mock API using `axios`
+- Handled asynchronous API calls using `async/await`
+- Managed loading states while fetching data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🪟 Modal Logic & Event Handling
+- Created a modal overlay (`FullBlogModal`) to display full blog content
+- Implemented `onClick` outside the modal to close it
+- Used `stopPropagation()` to prevent closing when clicking inside the modal
+
+### 🎨 Basic Styling & UX
+- Built a responsive layout using flexbox
+- Styled modal overlays to center and darken background
+- Maintained consistent font sizes and visual hierarchy
+
+### 🧠 Debugging & Best Practices
+- Fixed an infinite render loop by properly adding a dependency array to `useEffect`
+- Lifted state up for modal control using `selectedBlog`
+- Ensured modal state (`setSelectedBlog(null)`) resets cleanly on close
+
+---
+
+This project was a great warm-up to solidify the **core building blocks of React**, preparing me for more advanced concepts like hooks, routing, forms, and global state coming up next.
+
